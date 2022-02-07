@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg,#e8effd 0%,#d6e3f5 100%);
+}
+.btn{
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 17px 20px;
+  overflow: hidden;
+  transition: all .4s;
+}
+.btn .inner{
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  left: -100%;
+  z-index: -1;
+  transition: all .5s;
+}
+.btn button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+.btn:hover{
+  transform: scale(1.03);
+}
+.btn:hover .inner{
+  left: 0;
+}
+.btn4 .inner{
+    background: -webkit-linear-gradient(right, #43cea2,#185a9d,#43cea2,#185a9d);
+    border-color: #43cea2;
+    border-style: solid none solid none;
+    border-width: 5px;
+}
+img{
+  height:500px;
+  width: 500px;
+  border-style: solid ;
+  border-width: 10px;
+  border-color: #3400f0;
+  border-radius: 10px;
+}
+#potato{
+  font-size: 60px;
+  font-family: 'Secular One', sans-serif;
+  color: #09d6ff;
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgb(253, 0, 0);
+  background: rgb(131,58,180);
+  border-radius: 15px;
+  background: radial-gradient(circle, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 100%);
+}
+#one{
+  font-size: 45px;
+  color: #ff891a;
+  border-style: solid;
+  border-width: 7px;
+  font-family: 'Questrial', sans-serif;
+  border-color: rgb(173, 0, 253);
+  background: rgb(131,58,180);
+  border-radius: 15px;
+  background: radial-gradient(circle, rgb(0, 185, 56) 25%, rgb(0, 171, 184) 100%);
+}

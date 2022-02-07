@@ -1,0 +1,59 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">  
+  <href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <title> Family Book</title>
+  <body>
+    <center>
+    <h1 id="potato"> My Family Book</h1>
+    <br> <br>
+    <img id="family_img" src="The-family-book-e1417314391978.jpg">
+    <br><br>
+    <h3 id="one">My Family Book</h3>
+    <div class="center">
+      <div class="btn btn4">
+        <div class="inner"></div>
+        <button onclick="family()" >Next</button>
+      </div>
+    </div>
+</center>
+   <script>
+   var names=[
+   " My Family Book ",
+   " My Grandfather (Jagadish Chandra Das) ",
+   " My Grandmother (Pritikana Das) ",
+   " My Father (Sukanta Das)",
+   " My Mother (Baby Das)",
+   " Me (Raunak Das)"
+   ];
+ var images=[
+   "The-family-book-e1417314391978.jpg",
+   "happy-grandfather-cartoon-vector-17519643.jpg",
+   "17519486.jpg",
+   "67-674901_png-pinterest-clip-only-father-clipart-transparent-png.png",
+   "standing-young-mother-standing-young-mother-simple-vector-illustration-101319887.jpg",
+   "901-9016571_6-kids-sites-bedtime-stories-news-stories-short.png",
+  ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==6){
+    i=0;
+   }
+  };
+  </script>
+  </body>
+</html>
